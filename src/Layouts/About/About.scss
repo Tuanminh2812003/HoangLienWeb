@@ -1,0 +1,382 @@
+//SET-UP
+@font-face {
+    font-family: "OngDoTre";
+    src: url("../../../public/fonts/00153-UTM-Ong-Do-Tre.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextPhu";
+    src: url("../../../public/fonts/iCielBCOldStyle-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$back-color: #63081A;
+$text-color-green: #2A2D0A;
+$text-color-black: #000000;
+$text-color-white: #ffffff;
+$branding-color: #DDCB78;
+
+*{
+    font-family: 'Roboto';
+}
+
+//SET-UP
+
+.about{
+
+    &__sectionMain{
+        height: 90vh;
+        width: 100%;
+        background-image: url(../../../public//images/back3.png);
+        background-position: center;
+        background-size: cover;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__text{
+            font-family: 'TextPhu';
+            font-size: 100px;
+        }
+    }
+
+    &__section1{
+        display: flex;
+        margin-top: 80px;
+
+        .container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img{
+            margin-bottom: 40px;
+        }
+
+        &__left{
+
+            &__title{
+                font-family: 'TextPhu';
+                font-size: 30px;
+            }
+            
+            &__text{
+                margin-top: 32px;
+            }
+        }
+
+        &__right{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+
+            &__image1{
+                background-image: url(../../../public/images/about-section1-image1.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 65%;
+                height: 100%;
+            }
+
+            &__image2{
+                background-image: url(../../../public/images/about-section1-image2.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 33%;
+                height: 100%;
+            }
+        }
+    }
+
+    &__line{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        &__inner{
+            height: 3px;
+            background-color: $back-color;
+            border-radius: 100px;
+            width: 6%;
+        }
+    }
+
+    &__section2{
+
+        .row{
+            justify-content: space-between;
+        }
+        &__left{
+            width: 100%;
+            height: 100%;
+            background-image: url(../../../public/images/about-section-2-image1.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        &__setting{
+            width: 46%;
+        }
+
+        &__right{
+            &__text{
+                &__title{
+                    font-family: 'TextPhu';
+                    font-size: 35px;
+                }
+
+                &__text{
+                    margin-top: 32px;
+                }
+            }
+
+            &__image{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                &__image1{
+                    width: 32.5%;
+                    height: 150px;
+                    background-image: url(../../../public/images/about-section-2-image2.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+                &__image2{
+                    width: 32.5%;
+                    height: 150px;
+                    background-image: url(../../../public/images/about-section-2-image3.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+                &__image3{
+                    width: 32.5%;
+                    height: 150px;
+                    background-image: url(../../../public/images/about-section-2-image4.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+
+    &__section3{
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__title{
+            font-family: 'TextPhu';
+            font-size: 35px;
+            text-align: center;
+        }
+
+        &__disc{
+            text-align: center;
+            margin-top: 32px;
+            margin-bottom: 24px;
+            width: 70%;
+        }
+
+        &__image{
+            height: 400px;
+            width: 100%;
+            background-image: url(../../../public/images/about-section3-image1.png);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+
+    &__section3p5{
+        height: 100px;
+        width: 100%;
+        background-image: url(../../../public/images/back.png);
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 80px;
+    }
+
+    &__section4{
+        background-image: url(../../../public/images/about-section4-back.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 120px;
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            img{
+                margin-bottom: 80px;
+            }
+        }
+
+        &__text{
+            color: $text-color-white;
+            text-align: center;
+            margin-bottom: 24px;
+            width: 50%;
+        }
+
+    }
+
+    &__section5{
+        padding: 120px;
+        background-image: url(../../../public/images/back.png);
+        background-size: cover;
+        background-attachment: fixed;
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        &__logo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 65%;
+            height: 120px;
+
+            img{
+                height: 100px;
+                width: auto;
+                transition: all ease-in 0.15s;
+            }
+            img:hover{
+                height: 120px;
+            }
+        }
+
+        &__text{
+            width: 40%;
+            margin-top: 80px;
+        }
+    }
+
+    &__section6{
+        margin-top: 64px;
+
+        &__title{
+            text-align: center;
+            font-family: 'TextPhu';
+            font-size: 40px;
+            margin-bottom: 64px;
+        }
+
+        &__image{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 6 cột */
+            grid-template-rows: repeat(4, 300px); /* 3 hàng với chiều cao 200px */
+            gap: 24px; /* Khoảng cách giữa các ô */
+
+            .item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* Giữ hình ảnh tỉ lệ đúng */
+            }
+
+            .item-1 {
+                grid-column: span 2; /* Chiếm 3 cột */
+                grid-row: span 1; /* Chiếm 1 hàng */
+            }
+            .item-4 {
+                grid-column: span 1; /* Chiếm 3 cột */
+                grid-row: span 2; /* Chiếm 1 hàng */
+            }
+            .item-5 {
+                grid-column: span 1; /* Chiếm 3 cột */
+                grid-row: span 2; /* Chiếm 1 hàng */
+            }
+            .item-6 {
+                grid-column: span 1; /* Chiếm 3 cột */
+                grid-row: span 2; /* Chiếm 1 hàng */
+            }
+            .item-7 {
+                grid-column: span 2; /* Chiếm 3 cột */
+                grid-row: span 1; /* Chiếm 1 hàng */
+            }
+        }
+
+        &__more{
+            display: flex;
+            width: 100%;
+            justify-content: end;
+            align-items: center;
+            margin-top: 40px;
+
+            &__text{
+                color: $back-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+            &__icon{
+                color: $back-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                line-height: 0;
+                margin-left: 5px;
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__section6p5{
+        width: 100%;
+        height: 120px;
+        background-image: url(../../../public//images/back.png);
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    &__section6p6{
+        width: 100%;
+        height: 120px;
+        background-image: url(../../../public//images/back.png);
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 80px;
+    }
+    
+}

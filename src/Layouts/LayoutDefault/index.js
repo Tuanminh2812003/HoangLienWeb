@@ -24,7 +24,7 @@ function LayoutDefault(){
                             </div>
                             <div className='col-6'>
                                 <div className='layoutDefault__header__menu'>
-                                    <Link to={"/"}>
+                                    <Link to={"/ve_chung_toi"}>
                                         <div className='header__menu__tab'>
                                             Về chúng tôi
                                         </div>

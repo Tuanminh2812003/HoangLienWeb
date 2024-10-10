@@ -35,7 +35,6 @@ $branding-color: #DDCB78;
     &__sectionMain{
         background-image: url(../../../public/images/section-main-back.png);
         background-size: cover;
-        background-color: aqua;
         background-position: right;
         background-repeat: no-repeat;
         width: 100%;
@@ -522,6 +521,7 @@ $branding-color: #DDCB78;
 
     &__form{
         margin-top: 80px;
+        margin-bottom: 80px;
 
         .row{
             align-items: center;
