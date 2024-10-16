@@ -1,0 +1,340 @@
+//SET-UP
+@font-face {
+    font-family: "OngDoTre";
+    src: url("../../../public/fonts/00153-UTM-Ong-Do-Tre.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextPhu";
+    src: url("../../../public/fonts/iCielBCOldStyle-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$back-color: #63081A;
+$text-color-green: #2A2D0A;
+$text-color-black: #000000;
+$text-color-white: #ffffff;
+$branding-color: #DDCB78;
+
+*{
+    font-family: 'Roboto';
+}
+
+//SET-UP
+
+.productDetail{
+
+    &__sectionMain{
+        height: 90vh;
+        width: 100%;
+        background-image: url(../../../public//images/product-detail-sectionMain.png);
+        background-position: center;
+        background-size: cover;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__text{
+            font-family: 'TextPhu';
+            font-size: 100px;
+            color: $text-color-white;
+        }
+
+        img{
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    &__navBar{
+        background-image: url(../../../public//images/back.png);
+        display: flex;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 64px;
+        padding-bottom: 32px;
+
+        &__inner{
+            display: flex;
+            align-items: center;
+
+            a{
+                color: $text-color-black;
+                text-decoration: none;
+            }
+
+            &__icon{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            &__text{
+                border-bottom: 1px black solid;
+            }
+        }
+    }
+
+    &__sectionProduct{
+        display: flex;
+        width: 100%;
+        padding: 80px 00px;
+
+        &__image{
+            background-image: url(../../../public//images/product-detail-image1.png);
+            width: 90%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__right{
+            display: flex;
+            flex-direction: column;
+
+            &__title{
+                font-family: "TextPhu";
+                font-size: 40px;
+                margin-bottom: 40px;
+            }
+
+            &__text{
+                display: flex;
+                width: 100%;
+                margin-bottom: 15px;
+
+                &__main{
+                    font-weight: 600;
+                    width: 16%;
+                }
+            }
+
+            form{
+                margin-top: 64px;
+            }
+
+            &__select{
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+                &__select1{
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+                    label{
+                        font-weight: 600;
+                    }
+
+                    select{
+                        border-radius: 8px;
+                        padding: 10px;
+                        display: flex;
+                        border: 1px solid $text-color-green;
+                    }
+                }
+                &__select2{
+                    display: flex;
+                    flex-direction: column;
+                    width: 20%;
+                    margin-left: 40px;
+
+                    label{
+                        font-weight: 600;
+                    }
+
+                    input{
+                        border-radius: 8px;
+                        padding: 10px;
+                        display: flex;
+                        border: 1px solid $text-color-green;
+                    }
+                }
+            }
+
+            button{
+                margin-top: 40px;
+                width: 100%;
+                background-color: $back-color;
+                border-radius: 8px;
+                color: $text-color-white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px;
+                border: none;
+            }
+        }
+    }
+
+    &__form__icon{
+        margin-left: 20px;
+    }
+
+    &__sectionInfo{
+        display: flex;
+        background-image: url(../../../public/images/back.png);
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 80px 0px;
+
+        &__left{
+            margin-right: 20px;
+
+            &__title{
+                font-family: "TextPhu";
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+            
+            &__text{
+                border-left: 4px #63081A solid;
+
+                &__inner{
+                    padding-left: 20px;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &__circle{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 100px;
+                        background-color: #63081A;
+                        position: absolute;
+                        left: -12px;
+                    }
+                }
+            }
+        }
+
+        &__right{
+            margin-left: 20px;
+
+            &__title{
+                font-family: "TextPhu";
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            &__text{
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__line{
+            width: 100%;
+            margin-top: 64px;
+            margin-bottom: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+            &__inner{
+                height: 3px;
+                background-color: $back-color;
+                width: 30%;
+            }
+        }
+
+        &__left2{
+            margin-right: 20px;
+
+            &__title{
+                font-family: "TextPhu";
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+
+            &__text{
+                li{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__right2{
+            margin-left: 20px;
+
+            &__title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 30px;
+
+                &__main{
+                    font-family: "TextPhu";
+                    font-size: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                a{
+                    display: flex;
+                    color: $back-color;
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &__icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-left: 10px;
+                }
+            }
+
+            &__product{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__box{
+                    padding: 20px;
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    transition: 0,2s ease-in all;
+                    cursor: pointer;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    &__text{
+                        font-family: "TextPhu";
+                        font-size: 24px;
+                        margin-top: 20px;
+                    }
+                }
+
+                &__box:hover{
+                    background-color: $text-color-green;
+                    transition: 0,2s ease-in all;
+                    color: $text-color-white;
+                }
+            }
+        }
+    }
+}

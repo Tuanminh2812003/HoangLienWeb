@@ -1,0 +1,158 @@
+//SET-UP
+@font-face {
+    font-family: "OngDoTre";
+    src: url("../../../public/fonts/00153-UTM-Ong-Do-Tre.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextPhu";
+    src: url("../../../public/fonts/iCielBCOldStyle-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$back-color: #63081A;
+$text-color-green: #2A2D0A;
+$text-color-black: #000000;
+$text-color-white: #ffffff;
+$branding-color: #DDCB78;
+
+*{
+    font-family: 'Roboto';
+}
+
+//SET-UP
+
+.blog{
+    &__sectionMain{
+        height: 90vh;
+        width: 100%;
+        background-image: url(../../../public//images/back3.png);
+        background-position: center;
+        background-size: cover;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__text{
+            font-family: 'TextPhu';
+            font-size: 100px;
+        }
+    }
+
+    &__section{
+        padding: 72px 0px;
+        background-image: url(../../../public/images/back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        &__section1{
+            &__title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &__main{
+                    font-size: 30px;
+                    font-family: "TextPhu";
+                }
+
+                &__disc{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $back-color;
+
+                    &__icon{
+                        margin-left: 10px;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &__left{
+                margin-right: 20px;
+
+                &__img{
+                    width: 100%;
+                    height: 300px;
+                    background-color: aqua;
+                    overflow: hidden;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                &__text{
+                    &__main{
+                        font-size: 28px;
+                        font-family: "TextPhu";
+                    }
+
+                    &__disc{
+                        margin-top: 16px;
+                    }
+                }
+            }
+
+            &__right{
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 90%;
+
+                &__box{
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    &__img{
+                        width: 40%;
+                        height: 180px;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    &__text{
+                        width: 58%;
+
+                        &__title{
+                            font-size: 28px;
+                            font-family: "TextPhu";
+                        }
+
+                        &__disc{
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

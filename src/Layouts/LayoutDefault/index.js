@@ -29,17 +29,17 @@ function LayoutDefault(){
                                             Về chúng tôi
                                         </div>
                                     </Link>
-                                    <Link to={"/"}>
+                                    <Link to={"/san_pham"}>
                                         <div className='header__menu__tab'>
                                             Sản phẩm
                                         </div>
                                     </Link>
-                                    <Link to={"/"}>
+                                    <Link to={"/lien_he"}>
                                         <div className='header__menu__tab'>
                                             Liên hệ
                                         </div>
                                     </Link>
-                                    <Link to={"/"}>
+                                    <Link to={"/blog"}>
                                         <div className='header__menu__tab'>
                                             Blog
                                         </div>

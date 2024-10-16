@@ -4,8 +4,42 @@ import { FaArrowRight } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
+import { IoIosArrowBack } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
+import React, { useState } from 'react';
 
 function About(){
+
+    const images = [
+        "/images/about-section6-image1.png",
+        "/images/about-section6-image2.png",
+        "/images/about-section6-image3.png",
+        "/images/about-section6-image4.png",
+        "/images/about-section6-image5.png",
+        "/images/about-section6-image6.png",
+        "/images/about-section6-image7.png"
+    ];
+
+    const [isOpen, setIsOpen] = useState(false);  // Trạng thái mở modal
+    const [currentIndex, setCurrentIndex] = useState(0);  // Vị trí ảnh hiện tại
+
+    const openModal = (index) => {
+        setCurrentIndex(index);  // Đặt ảnh đang được bấm vào
+        setIsOpen(true);  // Mở modal
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);  // Đóng modal
+    };
+
+    const goToNext = () => {
+        setCurrentIndex((currentIndex + 1) % images.length);  // Chuyển đến ảnh tiếp theo
+    };
+
+    const goToPrev = () => {
+        setCurrentIndex((currentIndex - 1 + images.length) % images.length);  // Chuyển đến ảnh trước
+    };
+
     return(
         <>
             <div className='about'>
@@ -148,33 +182,23 @@ function About(){
                     </div>
                 </div>
 
+                <div className='about'>
+                {/* Nội dung trang About của bạn */}
                 <div className='about__section6'>
                     <div className='container'>
                         <div className='about__section6__title'>
                             Ghé thăm chúng tôi!
                         </div>
                         <div className='about__section6__image'>
-                            <div class="item item-1">
-                                <img src="/images/about-section6-image1.png" alt="Ảnh 1" />
-                            </div>
-                            <div class="item item-2">
-                                <img src="/images/about-section6-image2.png" alt="Ảnh 2" />
-                            </div>
-                            <div class="item item-3">
-                                <img src="/images/about-section6-image3.png" alt="Ảnh 3" />
-                            </div>
-                            <div class="item item-4">
-                                <img src="/images/about-section6-image4.png" alt="Ảnh 4" />
-                            </div>
-                            <div class="item item-5">
-                                <img src="/images/about-section6-image5.png" alt="Ảnh 5" />
-                            </div>
-                            <div class="item item-6">
-                                <img src="/images/about-section6-image6.png" alt="Ảnh 6" />
-                            </div>
-                            <div class="item item-7">
-                                <img src="/images/about-section6-image7.png" alt="Ảnh 7" />
-                            </div>
+                            {images.map((image, index) => (
+                                <div
+                                    key={index}
+                                    className={`item item-${index + 1}`}
+                                    onClick={() => openModal(index)}  // Mở modal khi bấm vào ảnh
+                                >
+                                    <img src={image} alt={`Ảnh ${index + 1}`} />
+                                </div>
+                            ))}
                         </div>
 
                         <div className='about__section6__more'>
@@ -188,6 +212,19 @@ function About(){
                     </div>
                 </div>
 
+                {/* Modal Popup */}
+                {isOpen && (
+                    <div className="modal">
+                        <div className="modal-content">
+                            <span className="close" onClick={closeModal}>&times;</span>
+                            <img src={images[currentIndex]} alt="Current" className="modal-image" />
+                            <button onClick={goToPrev} className="prev"><IoIosArrowBack /></button>
+                            <button onClick={goToNext} className="next"><IoIosArrowForward /></button>
+                        </div>
+                    </div>
+                )}
+            </div>
+
                 <div className='about__section6p5'>
 
                 </div>
@@ -195,12 +232,13 @@ function About(){
 
             <div className="home__form">
                     <div className="container">
+                        <div className="home__form__left__title">
+                            Nhận tư vấn từ chúng tôi!
+                        </div>
+                        <form>
                         <div className="row">
                             <div className="col-6">
                                 <div className="home__form__left">
-                                    <div className="home__form__left__title">
-                                        Nhận tư vấn từ chúng tôi!
-                                    </div>
                                     <div className="home__form__left__logo">
                                         <img src="/images/form-logo.png"/>
                                     </div>
@@ -239,7 +277,6 @@ function About(){
                             </div>
                             <div className="col-6">
                                 <div className="home__form__right">
-                                    <form>
                                         <div className="home__form__right__inner">
                                             <label for="home__form__name">
                                                 Tên
@@ -253,14 +290,14 @@ function About(){
                                                 Lời nhắn
                                             </label>
                                             <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
-                                            <div className="home__form__right__button">
-                                                <button>Nhận tư vấn ngay</button>
-                                            </div>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
+                            <div className="home__form__right__button">
+                                <button>Nhận tư vấn ngay</button>
+                            </div>
                         </div>
+                        </form>
                     </div>
                 </div>
 

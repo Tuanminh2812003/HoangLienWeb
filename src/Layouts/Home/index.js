@@ -368,12 +368,13 @@ function Home(){
 
                 <div className="home__form">
                     <div className="container">
+                        <div className="home__form__left__title">
+                            Nhận tư vấn từ chúng tôi!
+                        </div>
+                        <form>
                         <div className="row">
                             <div className="col-6">
                                 <div className="home__form__left">
-                                    <div className="home__form__left__title">
-                                        Nhận tư vấn từ chúng tôi!
-                                    </div>
                                     <div className="home__form__left__logo">
                                         <img src="/images/form-logo.png"/>
                                     </div>
@@ -412,7 +413,6 @@ function Home(){
                             </div>
                             <div className="col-6">
                                 <div className="home__form__right">
-                                    <form>
                                         <div className="home__form__right__inner">
                                             <label for="home__form__name">
                                                 Tên
@@ -426,14 +426,14 @@ function Home(){
                                                 Lời nhắn
                                             </label>
                                             <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
-                                            <div className="home__form__right__button">
-                                                <button>Nhận tư vấn ngay</button>
-                                            </div>
                                         </div>
-                                    </form>
                                 </div>
                             </div>
+                            <div className="home__form__right__button">
+                                <button>Nhận tư vấn ngay</button>
+                            </div>
                         </div>
+                        </form>
                     </div>
                 </div>
             </div>
