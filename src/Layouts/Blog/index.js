@@ -35,7 +35,7 @@ function Blog(){
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-6 blog__setting2">
                                     <Link to={"/van_hoa_tra"}>
                                         <div className="blog__section__section1__left">
                                             <div className="blog__section__section1__left__img">
@@ -99,7 +99,7 @@ function Blog(){
                                 </div>
                             </div>
                             <div className="row">
-                                <div className="col-6">
+                                <div className="col-6 blog__setting2">
                                     <div className="blog__section__section1__left">
                                         <div className="blog__section__section1__left__img">
                                             <img src="/images/image-product.png"/>
@@ -114,7 +114,7 @@ function Blog(){
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-6 blog__setting">
                                     <div className="blog__section__section2__right">
                                         <div className="blog__section__section2__right__box">
                                             <div className="blog__section__section2__right__box__img">

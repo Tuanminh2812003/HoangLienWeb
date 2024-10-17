@@ -28,6 +28,29 @@ $branding-color: #DDCB78;
     font-family: 'Roboto';
 }
 
+/* Áp dụng cho trình duyệt WebKit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: inner-spin-button; /* Giữ mũi tên luôn hiển thị */
+    appearance: inner-spin-button;         /* Đảm bảo mũi tên hiện */
+    opacity: 1;                            /* Luôn hiển thị với độ trong suốt hoàn toàn */
+}
+
+/* Áp dụng cho Firefox */
+input[type="number"] {
+    -moz-appearance: textfield; /* Firefox thường ẩn spinner, nhưng thuộc tính này giữ nó luôn hiện */
+}
+
+input[type="number"] {
+    padding-right: 25px; /* Đảm bảo có đủ không gian cho spinner */
+}
+
+/* Tùy chỉnh thêm nếu cần để mũi tên không bị che hoặc tràn ra ngoài */
+
+button{
+    border: none;
+}
+
 //SET-UP
 
 .layoutDefault{

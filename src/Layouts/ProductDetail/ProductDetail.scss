@@ -137,19 +137,33 @@ $branding-color: #DDCB78;
                     flex-direction: column;
                     width: 50%;
 
+                    &__minh{
+                        width: 100%;
+                        position: relative;
+
+                        select{
+                            appearance: none; /* Ẩn mũi tên mặc định trên một số trình duyệt */
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            border-radius: 8px;
+                            padding: 10px;
+                            display: flex;
+                            border: 1px solid $text-color-green;
+                            width: 100%;
+                        }
+
+                        &__icon{
+                            position: absolute;
+                            top: 10px;
+                            right: 10px;
+                        }
+
+                    }
+
                     label{
                         font-weight: 600;
                     }
 
-                    select{
-                        appearance: none; /* Ẩn mũi tên mặc định trên một số trình duyệt */
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        border-radius: 8px;
-                        padding: 10px;
-                        display: flex;
-                        border: 1px solid $text-color-green;
-                    }
                 }
                 &__select2{
                     display: flex;
@@ -202,7 +216,7 @@ $branding-color: #DDCB78;
             &__title{
                 font-family: "TextPhu";
                 font-size: 24px;
-                margin-bottom: 30px;
+                margin-bottom: 16px;
             }
             
             &__text{
@@ -236,7 +250,7 @@ $branding-color: #DDCB78;
             &__title{
                 font-family: "TextPhu";
                 font-size: 24px;
-                margin-bottom: 30px;
+                margin-bottom: 16px;
             }
 
             &__text{
@@ -268,7 +282,7 @@ $branding-color: #DDCB78;
             &__title{
                 font-family: "TextPhu";
                 font-size: 24px;
-                margin-bottom: 30px;
+                margin-bottom: 16px;
             }
 
             &__text{
@@ -286,7 +300,7 @@ $branding-color: #DDCB78;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin-bottom: 30px;
+                margin-bottom: 16px;
 
                 &__main{
                     font-family: "TextPhu";

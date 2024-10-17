@@ -115,7 +115,7 @@ function Contact(){
                     <div className="container">
                         <div className="contact__section1__inner">
                             <div className="contact__section1__inner__title">
-                                Trung tâm hỗ trỡ
+                                Trung tâm hỗ trợ
                             </div>
                             <div className="contact__section1__inner__qa">
                                 <div className="contact__section1__inner__qa__bar">

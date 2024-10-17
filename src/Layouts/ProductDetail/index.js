@@ -77,15 +77,20 @@ function ProductDetail(){
                                     <form>
                                         <div className="productDetail__sectionProduct__right__select">
                                             <div className="productDetail__sectionProduct__right__select__select1">
-                                                <label required>Kích thước*</label>
-                                                <select>
-                                                    <option>100Gr</option>
-                                                    <option>125Gr</option>
-                                                    <option>150Gr</option>
-                                                </select>
+                                                <label required>Kích thước *</label>
+                                                <div className="productDetail__sectionProduct__right__select__select1__minh">
+                                                    <select>
+                                                        <option>100Gr</option>
+                                                        <option>125Gr</option>
+                                                        <option>150Gr</option>
+                                                    </select>
+                                                    <div className="productDetail__sectionProduct__right__select__select1__minh__icon">
+                                                        <IoIosArrowDown />
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div className="productDetail__sectionProduct__right__select__select2">
-                                                <label for="productDetail__form__soLuong">Số lượng*</label>
+                                                <label for="productDetail__form__soLuong">Số lượng *</label>
                                                 <input type="number" required id="productDetail__form__soLuong" placeholder="1">
 
                                                 </input>

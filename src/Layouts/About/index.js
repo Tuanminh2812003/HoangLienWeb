@@ -290,7 +290,7 @@ function About(){
                                             <input type="text" placeholder="Tên của bạn" required name="name" id="home__form__name"/>
                                             <label for="home__form__phone">
                                                 <div>
-                                                    Số điện thoại
+                                                    Số điện thoại 
                                                 </div>
                                                 <div className="sao">
                                                     *

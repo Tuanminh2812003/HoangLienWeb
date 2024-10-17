@@ -43,7 +43,7 @@ function BlogDetail(){
                         </div>
                         <div className="product__sectionProduct__bar__top">
                             <div className="product__sectionProduct__bar__top__title blogChoice__title">
-                                Trà Hoàng Liên - hương vị từ cội nguồn
+                                Bài viết liên quan
                             </div>
                             <div className="product__sectionProduct__bar__top__choice blogChoice">
                                 Trà Hoàng Liên - hương vị từ cội nguồn
@@ -65,7 +65,7 @@ function BlogDetail(){
                                 Văn Hóa Trà Việt Nam: Một Chuyến Hành Trình Qua Hương Vị và Truyền Thống
                             </div>
                             <div className="blogDetail__inner__disc">
-                                Trung tâm hỗ trợ khách hàng Hoàng Liên CỔ thụ trà
+                                Trung tâm hỗ trợ khách hàng Hoàng Liên cổ thụ trà
                             </div>
                             <div className="blogDetail__inner__text">
                                 Từ những làn sương sớm của vùng núi cao, nơi những đồi trà xanh mướt vươn mình trong ánh nắng đầu ngày, văn hóa trà của Việt Nam mở ra một câu chuyện thơ mộng, đậm đà bản sắc dân tộc. Trà không chỉ là thức uống, mà là một phần không thể thiếu trong nhịp sống của người Việt, là sợi chỉ đỏ kết nối các thế hệ, từ quá khứ xa xôi đến hiện tại.
@@ -101,6 +101,95 @@ function BlogDetail(){
                     </div>
                 </div>
             </div>
+            <div className="home__form">
+                    <div className="container">
+                        <div className="home__form__left__title">
+                            Nhận tư vấn từ chúng tôi!
+                        </div>
+                        <form>
+                        <div className="row">
+                            <div className="col-6">
+                                <div className="home__form__left">
+                                    <div className="home__form__left__logo">
+                                        <img src="/images/form-logo.png"/>
+                                    </div>
+                                    <div className="home__form__left__line">
+                                        <div className="home__form__left__line__inner">
+
+                                        </div>
+                                    </div>
+                                    <div className="home__form__left__icon">
+                                        <div className="home__form__left__icon__inner">
+                                            <div className="home__form__left__icon__inner__icon">
+                                                <FaPhoneAlt/>
+                                            </div>
+                                            <div className="home__form__left__icon__inner__text">
+                                                1900 10068
+                                            </div>
+                                        </div>
+                                        <div className="home__form__left__icon__inner">
+                                            <div className="home__form__left__icon__inner__icon">
+                                                <IoMdMail/>
+                                            </div>
+                                            <div className="home__form__left__icon__inner__text">
+                                                HoangLientra@gmail.com
+                                            </div>
+                                        </div>
+                                        <div className="home__form__left__icon__inner">
+                                            <div className="home__form__left__icon__inner__icon">
+                                                <FaFacebookF/>
+                                            </div>
+                                            <div className="home__form__left__icon__inner__text">
+                                                HoangLientra.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-6">
+                                <div className="home__form__right">
+                                        <div className="home__form__right__inner">
+                                            <label for="home__form__name">
+                                                <div>
+                                                    Tên
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
+                                            </label>
+                                            <input type="text" placeholder="Tên của bạn" required name="name" id="home__form__name"/>
+                                            <label for="home__form__phone">
+                                                <div>
+                                                    Số điện thoại
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
+                                            </label>
+                                            <input type="text" placeholder="Số điện thoại" required name="phone" id="home__form__phone"/>
+                                            <label for="home__form__id">
+                                                <div>
+                                                    Lời nhắn
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
+                                            </label>
+                                            <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
+                                        </div>
+                                </div>
+                            </div>
+                            <div className="home__form__right__button">
+                                <button>Nhận tư vấn ngay</button>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div className='about__section6p6'>
+
+                </div>
         </>
     )
 }
