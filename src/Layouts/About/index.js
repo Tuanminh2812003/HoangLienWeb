@@ -96,7 +96,7 @@ function About(){
 
                                 </div>
                             </div>
-                            <div className='col-6 about__section2__setting'>
+                            <div className='col-6'>
                                 <div className='about__section2__right'>
                                     <div className='about__section2__right__text'>
                                         <div className='about__section2__right__text__title'>
