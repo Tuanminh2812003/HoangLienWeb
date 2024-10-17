@@ -48,6 +48,7 @@ $branding-color: #DDCB78;
         &__text{
             font-family: 'TextPhu';
             font-size: 100px;
+            margin-bottom: 8px;
         }
     }
 
@@ -69,7 +70,7 @@ $branding-color: #DDCB78;
 
             &__title{
                 font-family: 'TextPhu';
-                font-size: 30px;
+                font-size: 32px;
             }
             
             &__text{
@@ -108,8 +109,8 @@ $branding-color: #DDCB78;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        margin-top: 64px;
+        margin-bottom: 64px;
 
         &__inner{
             height: 3px;
@@ -141,7 +142,7 @@ $branding-color: #DDCB78;
             &__text{
                 &__title{
                     font-family: 'TextPhu';
-                    font-size: 35px;
+                    font-size: 32px;
                 }
 
                 &__text{
@@ -153,7 +154,7 @@ $branding-color: #DDCB78;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                margin-top: 40px;
+                margin-top: 32px;
 
                 &__image1{
                     width: 32.5%;
@@ -190,7 +191,7 @@ $branding-color: #DDCB78;
 
         &__title{
             font-family: 'TextPhu';
-            font-size: 35px;
+            font-size: 32px;
             text-align: center;
         }
 
@@ -224,7 +225,11 @@ $branding-color: #DDCB78;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        padding: 120px;
+        padding-top: 160px;
+        padding-left: 160px;
+        padding-right: 160px;
+        padding-bottom: 80px;
+        display: flex;
 
         .container{
             display: flex;
@@ -247,7 +252,9 @@ $branding-color: #DDCB78;
     }
 
     &__section5{
-        padding: 120px;
+        display: flex;
+        padding-top: 80px;
+        padding-bottom: 160px;
         background-image: url(../../../public/images/back.png);
         background-size: cover;
         background-attachment: fixed;
@@ -278,7 +285,8 @@ $branding-color: #DDCB78;
 
         &__text{
             width: 40%;
-            margin-top: 80px;
+            margin-top: 64px;
+            text-align: center;
         }
     }
 
@@ -332,7 +340,12 @@ $branding-color: #DDCB78;
             width: 100%;
             justify-content: end;
             align-items: center;
-            margin-top: 40px;
+            margin-top: 32px;
+
+            a{
+                display: flex;
+                text-decoration: none;
+            }
 
             &__text{
                 color: $back-color;
@@ -354,7 +367,7 @@ $branding-color: #DDCB78;
                 margin: 0;
                 padding: 0;
                 line-height: 0;
-                margin-left: 5px;
+                margin-left: 8px;
                 font-size: 12px;
                 cursor: pointer;
             }

@@ -70,8 +70,8 @@ $branding-color: #DDCB78;
         background-image: url(../../../public/images/footer.png);
         background-size: contain;
         background-position: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 70px;
+        padding-bottom: 100px;
         color: $text-color-white;
         height: 500px;
         display: flex;
@@ -154,11 +154,11 @@ $branding-color: #DDCB78;
 
     &__copyright{
         width: 100%;
-        height: 40px;
         background-color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 13px;
+        padding: 12px;
     }
 }

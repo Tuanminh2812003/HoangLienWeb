@@ -8,6 +8,8 @@ import Contact from './Layouts/Contact';
 import ProductDetail from './Layouts/ProductDetail';
 import Blog from './Layouts/Blog';
 import ScrollToTop from './Components/ScrollToTop';
+import Gallery from './Layouts/Gallery';
+import BlogDetail from './Layouts/BlogDetail';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path='/lien_he' element={<Contact/>}/>
           <Route path='/pho_nhi_chin' element={<ProductDetail/>}/>
           <Route path='/blog' element={<Blog/>}/>
+          <Route path='/ghe_tham' element={<Gallery/>}/>
+          <Route path='/van_hoa_tra' element={<BlogDetail/>}/>
         </Route>
       </Routes>
     </>

@@ -49,6 +49,7 @@ $branding-color: #DDCB78;
             font-family: 'TextPhu';
             font-size: 100px;
             color: $text-color-white;
+            margin-bottom: 8px;
         }
 
         img{
@@ -183,7 +184,7 @@ $branding-color: #DDCB78;
     }
 
     &__form__icon{
-        margin-left: 20px;
+        margin-left: 8px;
     }
 
     &__sectionInfo{
@@ -203,12 +204,16 @@ $branding-color: #DDCB78;
             }
             
             &__text{
-                border-left: 4px #63081A solid;
+
+                .clear{
+                    border-left: 4px transparent solid !important;
+                }
 
                 &__inner{
                     padding-left: 20px;
-                    margin-bottom: 20px;
                     position: relative;
+                    border-left: 4px #63081A solid;
+                    padding-bottom: 20px;
 
                     &__circle{
                         width: 20px;

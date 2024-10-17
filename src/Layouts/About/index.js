@@ -7,6 +7,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function About(){
 
@@ -17,7 +18,7 @@ function About(){
         "/images/about-section6-image4.png",
         "/images/about-section6-image5.png",
         "/images/about-section6-image6.png",
-        "/images/about-section6-image7.png"
+        "/images/about-section6-image7.png",
     ];
 
     const [isOpen, setIsOpen] = useState(false);  // Trạng thái mở modal
@@ -182,7 +183,6 @@ function About(){
                     </div>
                 </div>
 
-                <div className='about'>
                 {/* Nội dung trang About của bạn */}
                 <div className='about__section6'>
                     <div className='container'>
@@ -202,15 +202,16 @@ function About(){
                         </div>
 
                         <div className='about__section6__more'>
-                            <div className='about__section6__more__text'>
-                                Xem thêm
-                            </div>
-                            <div className='about__section6__more__icon'>
-                                <FaArrowRight />
-                            </div>
+                            <Link to={"/ghe_tham"}>
+                                <div className='about__section6__more__text'>
+                                    Xem thêm
+                                </div>
+                                <div className='about__section6__more__icon'>
+                                    <FaArrowRight />
+                                </div>
+                            </Link>
                         </div>
                     </div>
-                </div>
 
                 {/* Modal Popup */}
                 {isOpen && (
@@ -279,15 +280,30 @@ function About(){
                                 <div className="home__form__right">
                                         <div className="home__form__right__inner">
                                             <label for="home__form__name">
-                                                Tên
+                                                <div>
+                                                    Tên
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Tên của bạn" required name="name" id="home__form__name"/>
                                             <label for="home__form__phone">
-                                                Số điện thoại
+                                                <div>
+                                                    Số điện thoại
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Số điện thoại" required name="phone" id="home__form__phone"/>
                                             <label for="home__form__id">
-                                                Lời nhắn
+                                                <div>
+                                                    Lời nhắn
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
                                         </div>

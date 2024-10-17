@@ -70,15 +70,30 @@ function Contact(){
                                 <div className="home__form__right">
                                         <div className="home__form__right__inner">
                                             <label for="home__form__name">
-                                                Tên
+                                                <div>
+                                                    Tên
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Tên của bạn" required name="name" id="home__form__name"/>
                                             <label for="home__form__phone">
-                                                Số điện thoại
+                                                <div>
+                                                    Số điện thoại
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Số điện thoại" required name="phone" id="home__form__phone"/>
                                             <label for="home__form__id">
-                                                Lời nhắn
+                                                <div>
+                                                    Lời nhắn
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
                                         </div>

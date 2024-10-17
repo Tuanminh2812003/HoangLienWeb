@@ -1,4 +1,5 @@
 import "./Blog.scss"
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 import { IoMdArrowRoundForward } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa";
@@ -35,19 +36,21 @@ function Blog(){
                             </div>
                             <div className="row">
                                 <div className="col-6">
-                                    <div className="blog__section__section1__left">
-                                        <div className="blog__section__section1__left__img">
-                                            <img src="/images/image-product.png"/>
-                                        </div>
-                                        <div className="blog__section__section1__left__text">
-                                            <div className="blog__section__section1__left__text__main">
-                                                Chén trà là đầu câu truyện
+                                    <Link to={"/van_hoa_tra"}>
+                                        <div className="blog__section__section1__left">
+                                            <div className="blog__section__section1__left__img">
+                                                <img src="/images/image-product.png"/>
                                             </div>
-                                            <div className="blog__section__section1__left__text__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            <div className="blog__section__section1__left__text">
+                                                <div className="blog__section__section1__left__text__main">
+                                                    Chén trà là đầu câu truyện
+                                                </div>
+                                                <div className="blog__section__section1__left__text__disc">
+                                                    Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                                 <div className="col-6">
                                     <div className="blog__section__section1__right">
@@ -75,6 +78,185 @@ function Blog(){
                                                 <div className="blog__section__section1__right__box__text__disc">
                                                     Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="blog__section__section2">
+                            <div className="blog__section__section1__title">
+                                <div className="blog__section__section1__title__main">
+                                    Văn hóa trà
+                                </div>
+                                <div className="blog__section__section1__title__disc">
+                                    <div className="blog__section__section1__title__disc__text">
+                                        Xem thêm
+                                    </div>
+                                    <div className="blog__section__section1__title__disc__icon">
+                                        <IoMdArrowRoundForward />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-6">
+                                    <div className="blog__section__section1__left">
+                                        <div className="blog__section__section1__left__img">
+                                            <img src="/images/image-product.png"/>
+                                        </div>
+                                        <div className="blog__section__section1__left__text">
+                                            <div className="blog__section__section1__left__text__main">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section1__left__text__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-6">
+                                    <div className="blog__section__section2__right">
+                                        <div className="blog__section__section2__right__box">
+                                            <div className="blog__section__section2__right__box__img">
+                                                <img src="/images/blog-image1.png"/>
+                                            </div>
+                                            <div className="blog__section__section2__right__box__text">
+                                                <div className="blog__section__section2__right__box__text__title">
+                                                    Chén trà là đầu câu truyện
+                                                </div>
+                                                <div className="blog__section__section2__right__box__text__disc">
+                                                    Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="blog__section__section2__right__box">
+                                            <div className="blog__section__section2__right__box__img">
+                                                <img src="/images/blog-image1.png"/>
+                                            </div>
+                                            <div className="blog__section__section2__right__box__text">
+                                                <div className="blog__section__section2__right__box__text__title">
+                                                    Chén trà là đầu câu truyện
+                                                </div>
+                                                <div className="blog__section__section2__right__box__text__disc">
+                                                    Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="blog__section__section3">
+                            <div className="container">
+                                <div className="blog__section__section1__title">
+                                    <div className="blog__section__section1__title__main">
+                                        Kỹ thuật pha trà
+                                    </div>
+                                    <div className="blog__section__section1__title__disc">
+                                        <div className="blog__section__section1__title__disc__text">
+                                            Xem thêm
+                                        </div>
+                                        <div className="blog__section__section1__title__disc__icon">
+                                            <IoMdArrowRoundForward />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image2.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image3.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image4.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="blog__section__section3">
+                            <div className="container">
+                                <div className="blog__section__section1__title">
+                                    <div className="blog__section__section1__title__main">
+                                        Trà và Sức khỏe
+                                    </div>
+                                    <div className="blog__section__section1__title__disc">
+                                        <div className="blog__section__section1__title__disc__text">
+                                            Xem thêm
+                                        </div>
+                                        <div className="blog__section__section1__title__disc__icon">
+                                            <IoMdArrowRoundForward />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image2.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image3.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-4">
+                                        <div className="blog__section__section3__box">
+                                            <div className="blog__section__section3__box__img">
+                                                <img src="/images/blog-image4.png"/>
+                                            </div>
+                                            <div className="blog__section__section3__box__title">
+                                                Chén trà là đầu câu truyện
+                                            </div>
+                                            <div className="blog__section__section3__box__disc">
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
                                             </div>
                                         </div>
                                     </div>
@@ -134,15 +316,30 @@ function Blog(){
                                 <div className="home__form__right">
                                         <div className="home__form__right__inner">
                                             <label for="home__form__name">
-                                                Tên
+                                                <div>
+                                                    Tên
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Tên của bạn" required name="name" id="home__form__name"/>
                                             <label for="home__form__phone">
-                                                Số điện thoại
+                                                <div>
+                                                    Số điện thoại
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <input type="text" placeholder="Số điện thoại" required name="phone" id="home__form__phone"/>
                                             <label for="home__form__id">
-                                                Lời nhắn
+                                                <div>
+                                                    Lời nhắn
+                                                </div>
+                                                <div className="sao">
+                                                    *
+                                                </div>
                                             </label>
                                             <textarea placeholder="Nội dung cần tư vấn" required name="note" id="home__form__id"/>
                                         </div>

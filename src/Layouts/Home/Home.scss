@@ -28,6 +28,10 @@ $branding-color: #DDCB78;
     font-family: 'Roboto';
 }
 
+.sao{
+    color: red;
+}
+
 //SET-UP
 
 .home{
@@ -147,23 +151,24 @@ $branding-color: #DDCB78;
             align-items: center;
             flex-direction: column;
             width: 100%;
-            height: 500px;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             color: $text-color-white;
-            padding-left: 120px;
-            padding-right: 120px;
+            padding-left: 121px;
+            padding-right: 121px;
+            padding-top: 60px;
+            padding-bottom: 138px;
 
             &__title{
                 font-family: 'OngDoTre';
                 font-size: 80px;
-                margin-bottom: 50px;
+                margin-bottom: 32px;
                 width: 100%;
             }
 
             &__text{
-                width: 70%;
+                width: 65%;
                 font-size: 15px;
             }
         }
@@ -188,9 +193,9 @@ $branding-color: #DDCB78;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 70vh;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        height: 90vh;
+        padding-top: 100px;
+        padding-bottom: 65px;
         overflow: auto;
         scrollbar-width: none;
         -ms-overflow-style: none;
@@ -201,9 +206,9 @@ $branding-color: #DDCB78;
 
         &__title{
             font-family: "TextPhu";
-            font-size: 35px;
+            font-size: 40px;
             color: $text-color-white;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
         }
 
         &__text{
@@ -245,7 +250,7 @@ $branding-color: #DDCB78;
         margin-top: 80px;
 
         &__row1{
-            margin-bottom: 72px;
+            margin-bottom: 64px;
         }
 
         &__box1{
@@ -318,13 +323,14 @@ $branding-color: #DDCB78;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        margin-top: 64px;
+        margin-top: 80px;
         
         &__inner{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 30px;
+            padding-top: 86px;
+            padding-bottom: 37px;
             width: 100%;
             height: 100%;
         }
@@ -544,7 +550,7 @@ $branding-color: #DDCB78;
             }
 
             &__logo{
-                margin-top: 48px;
+                margin-top: 40px;
                 width: 70%;
 
                 img{
@@ -579,7 +585,7 @@ $branding-color: #DDCB78;
                     }
 
                     &__text{
-                        margin-left: 24px;
+                        margin-left: 16px;
                         color: #3E3E3C;
                         font-weight: 800;
                     }
@@ -600,6 +606,7 @@ $branding-color: #DDCB78;
                     color: #3E3E3C;
                     font-weight: 800;
                     margin-bottom: 8px;
+                    display: flex;
                 }
 
                 input{
@@ -607,7 +614,7 @@ $branding-color: #DDCB78;
                     border-radius: 12px;
                     border: 0.1px solid #3E3E3C;
                     margin-bottom: 32px;
-                    padding: 10px;
+                    padding: 16px;
                 }
 
                 #home__form__id{
@@ -618,7 +625,7 @@ $branding-color: #DDCB78;
                     width: 100%;
                     height: 150px;
                     border-radius: 12px;
-                    padding: 10px;
+                    padding: 16px;
                 }
             }
 
@@ -631,9 +638,10 @@ $branding-color: #DDCB78;
                     background-color: $back-color;
                     color: $text-color-white;
                     font-size: 14px;
-                    padding: 12px;
+                    padding: 16px;
                     border-radius: 12px;
                     width: 160px;
+                    margin-top: 16px;
                 }
             }
         }

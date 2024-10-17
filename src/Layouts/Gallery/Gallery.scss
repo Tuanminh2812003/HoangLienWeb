@@ -1,0 +1,69 @@
+//SET-UP
+@font-face {
+    font-family: "OngDoTre";
+    src: url("../../../public/fonts/00153-UTM-Ong-Do-Tre.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "TextPhu";
+    src: url("../../../public/fonts/iCielBCOldStyle-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../../../public/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+$back-color: #63081A;
+$text-color-green: #2A2D0A;
+$text-color-black: #000000;
+$text-color-white: #ffffff;
+$branding-color: #DDCB78;
+
+*{
+    font-family: 'Roboto';
+}
+
+//SET-UP
+
+.gallery{
+    &__sectionMain{
+        height: 90vh;
+        width: 100%;
+        background-image: url(../../../public//images/back3.png);
+        background-position: center;
+        background-size: cover;
+        background-color: aqua;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        &__text{
+            font-family: 'TextPhu';
+            font-size: 100px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__line{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 64px;
+
+        &__inner{
+            height: 3px;
+            background-color: $back-color;
+            border-radius: 8px;
+            width: 5%;
+        }
+    }
+}

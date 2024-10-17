@@ -47,6 +47,7 @@ $branding-color: #DDCB78;
         &__text{
             font-family: 'TextPhu';
             font-size: 100px;
+            margin-bottom: 8px;
         }
     }
 
@@ -123,6 +124,7 @@ $branding-color: #DDCB78;
                         border-bottom: 1px solid gray;
                         padding-bottom: 16px;
                         justify-content: space-between;
+                        margin-bottom: 24px;
 
                         &__text{
                             display: flex;
@@ -132,6 +134,7 @@ $branding-color: #DDCB78;
                             &__title{
                                 font-family: "TextPhu";
                                 font-size: 20px;
+                                margin-bottom: 8px;
                             }
                         }
 
