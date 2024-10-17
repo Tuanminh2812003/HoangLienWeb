@@ -61,6 +61,11 @@ $branding-color: #DDCB78;
             a{
                 color: $text-color-white;
                 text-decoration: none;
+                transition: all 0.2s ease-in;
+            }
+            .active {
+                font-weight: 1000;
+                transition: all 0.2s ease-in;
             }
         }
     }

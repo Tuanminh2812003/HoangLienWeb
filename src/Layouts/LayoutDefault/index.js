@@ -17,33 +17,25 @@ function LayoutDefault(){
                         <div className='row'>
                             <div className='col-6'>
                                 <div className='layoutDefault__header__logo'>
-                                    <Link to={"/"}>
+                                    <NavLink to={"/"}>
                                         <img src="/images/Logo.png" alt="logo"/>
-                                    </Link>
+                                    </NavLink>
                                 </div>
                             </div>
                             <div className='col-6'>
                                 <div className='layoutDefault__header__menu'>
-                                    <Link to={"/ve_chung_toi"}>
-                                        <div className='header__menu__tab'>
-                                            Về chúng tôi
-                                        </div>
-                                    </Link>
-                                    <Link to={"/san_pham"}>
-                                        <div className='header__menu__tab'>
-                                            Sản phẩm
-                                        </div>
-                                    </Link>
-                                    <Link to={"/lien_he"}>
-                                        <div className='header__menu__tab'>
-                                            Liên hệ
-                                        </div>
-                                    </Link>
-                                    <Link to={"/blog"}>
-                                        <div className='header__menu__tab'>
-                                            Blog
-                                        </div>
-                                    </Link>
+                                    <NavLink to={"/ve_chung_toi"} className={({ isActive }) => isActive ? "header__menu__tab active" : "header__menu__tab"}>
+                                        Về chúng tôi
+                                    </NavLink>
+                                    <NavLink to={"/san_pham"} className={({ isActive }) => isActive ? "header__menu__tab active" : "header__menu__tab"}>
+                                        Sản phẩm
+                                    </NavLink>
+                                    <NavLink to={"/lien_he"} className={({ isActive }) => isActive ? "header__menu__tab active" : "header__menu__tab"}>
+                                        Liên hệ
+                                    </NavLink>
+                                    <NavLink to={"/blog"} className={({ isActive }) => isActive ? "header__menu__tab active" : "header__menu__tab"}>
+                                        Blog
+                                    </NavLink>
                                 </div>
                             </div>
                         </div>

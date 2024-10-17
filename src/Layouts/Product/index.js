@@ -23,7 +23,7 @@ function Product(){
                 <div className="product__sectionProduct">
                     <div className="product__sectionProduct__bar">
                         <div className="product__sectionProduct__bar__top">
-                            <div className="product__sectionProduct__bar__top__choice">
+                            <div className="product__sectionProduct__bar__top__choice test1">
                                 Tất cả sản phẩm
                             </div>
                             <div className="product__sectionProduct__bar__top__choice">

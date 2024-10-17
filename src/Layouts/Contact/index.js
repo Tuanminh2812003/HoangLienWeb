@@ -119,7 +119,7 @@ function Contact(){
                             </div>
                             <div className="contact__section1__inner__qa">
                                 <div className="contact__section1__inner__qa__bar">
-                                    <div className="contact__section1__inner__qa__bar__choice">
+                                    <div className="contact__section1__inner__qa__bar__choice test2">
                                         Câu hỏi thường gặp
                                     </div>
 
