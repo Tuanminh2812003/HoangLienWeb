@@ -36,7 +36,6 @@ $branding-color: #DDCB78;
         background-image: url(../../../public/images/BlogDetail-sectionMain.png);
         background-position: center;
         background-size: cover;
-        background-color: aqua;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
@@ -55,4 +54,84 @@ $branding-color: #DDCB78;
             height: auto;
         }
     }
+
+    &__inner{
+        padding: 80px 0px;
+
+        &__title{
+            font-size: 40px;
+            font-family: "TextPhu";
+            margin-bottom: 8px;
+        }
+
+        &__disc{
+            font-size: 14px;
+            color: gray;
+            margin-bottom: 80px;
+        }
+
+        &__text{
+            margin-bottom: 24px;
+        }
+
+        &__image1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 8px;
+
+            &__anh1{
+                background-image: url(../../../public//images//blog-detail-anh1.png);
+                width: 49%;
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+            }
+            &__anh2{
+                background-image: url(../../../public//images//blog-detail-anh2.png);
+                width: 49%;
+                height: 400px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        &__discimage{
+            font-size: 14px;
+            font-style: italic;
+            color: gray;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &__image2{
+            background-image: url(../../../public//images//blog-detail-anh3.png);
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 8px;
+        }
+
+        &__titleDisc{
+            font-weight: 800;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.blogBar{
+    height: 650px !important;
+}
+.product__sectionProduct__bar__top__title{
+    font-size: 24px;
+    font-family: "TextPhu";
+    margin-bottom: 16px;
+}
+
+.blogChoice{
+    padding: 8px !important;
+    font-family: "Roboto";
+    font-size: 16px;
 }

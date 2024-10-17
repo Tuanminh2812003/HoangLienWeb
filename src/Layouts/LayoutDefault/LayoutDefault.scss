@@ -65,6 +65,7 @@ $branding-color: #DDCB78;
             }
             .active {
                 font-weight: 1000;
+                font-size: 18px;
                 transition: all 0.2s ease-in;
             }
         }
@@ -110,6 +111,7 @@ $branding-color: #DDCB78;
             margin-top: 80px;
             margin-left: 5%;
             width: 52%;
+            text-align: justify;
 
             b{
                 font-weight: 600;

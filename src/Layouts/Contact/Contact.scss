@@ -42,7 +42,6 @@ $branding-color: #DDCB78;
         background-image: url(../../../public//images/back3.png);
         background-position: center;
         background-size: cover;
-        background-color: aqua;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
@@ -135,10 +134,11 @@ $branding-color: #DDCB78;
                             display: flex;
                             flex-direction: column;
                             width: 75%;
+                            text-align: justify;
 
                             &__title{
                                 font-family: "TextPhu";
-                                font-size: 20px;
+                                font-size: 24px;
                                 margin-bottom: 8px;
                             }
                         }

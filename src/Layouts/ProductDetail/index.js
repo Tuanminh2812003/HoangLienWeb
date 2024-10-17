@@ -86,7 +86,7 @@ function ProductDetail(){
                                             </div>
                                             <div className="productDetail__sectionProduct__right__select__select2">
                                                 <label for="productDetail__form__soLuong">Số lượng*</label>
-                                                <input type="number" required id="productDetail__form__soLuong">
+                                                <input type="number" required id="productDetail__form__soLuong" placeholder="1">
 
                                                 </input>
                                             </div>

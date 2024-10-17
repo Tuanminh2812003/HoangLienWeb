@@ -172,7 +172,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế.
                                             </div>
                                         </div>
                                     </div>
@@ -185,7 +185,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. 
                                             </div>
                                         </div>
                                     </div>
@@ -198,7 +198,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. 
                                             </div>
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. 
                                             </div>
                                         </div>
                                     </div>
@@ -243,7 +243,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. 
                                             </div>
                                         </div>
                                     </div>
@@ -256,7 +256,7 @@ function Blog(){
                                                 Chén trà là đầu câu truyện
                                             </div>
                                             <div className="blog__section__section3__box__disc">
-                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế. Mỗi phẩm trà sẽ có cách dùng riêng để giữ được đặc trưng hương vị tốt nhất
+                                                Hướng dẫn pha trà được đi kèm trong brochure của mỗi hộp trà, giúp bạn pha đúng cách để tận hưởng hương vị tinh tế.
                                             </div>
                                         </div>
                                     </div>
